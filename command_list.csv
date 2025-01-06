@@ -1,0 +1,21 @@
+    1  git clone https://github.com/YelyzavetaPodolianchuk/HW_10.git
+    2  cd HW_10
+    3  touch text_ignore.txt
+    4  git status
+    6  git add .
+    7  git commit -m "changed .gitignore"
+    8  touch main_test.txt
+   10  git add .
+   11  git commit -m "added main_test.txt"
+   12  git branch develop
+   13  git checkout develop
+   14  touch develop_test.txt
+   15  git add .
+   16  git commit -m "added develop_test.txt"
+   18  git add .
+   19  git status
+   20  git commit -m "edited develop_test.txt"
+   21  git checkout main
+   22  git merge develop
+   23  git log
+   24  history > command_list.csv
